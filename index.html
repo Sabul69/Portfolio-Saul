@@ -15,12 +15,12 @@
         
         <ul class="just-between col5 flex just-center align-center res">
             <button class="logo"><a href="#">S</a></button>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Service</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
+            <li class="mobile-non"><a href="">Home</a></li>
+            <li class="mobile-non"><a href="">About</a></li>
+            <li class="mobile-non"><a href="">Service</a></li>
+            <li class="mobile-non"><a href="">Portfolio</a></li>
+            <li class="mobile-non"><a href="">Blog</a></li>
+            <li class="mobile-non"><a href="">Contact</a></li>
         </ul>
         <ul class="just-between col2 flex just-center align-center">
             <li><a href=""><img src="./assets/img/facebook.svg" alt="Fb"></a></li>
@@ -32,7 +32,7 @@
     
  </header>
  
- <section class="main">
+ <section class="main flex">
      <div class="main-title container">
          <h1>Desarrollador Web Front End</h1>
         <h2>Hello,I'm Saúl Welcome  to my world </h2>
@@ -41,26 +41,23 @@
  </section>   
 
  <section class="about">
-     <div class="container flex just-between">
-         <div class="img-about col4">
+     <div class="about-content container flex just-between">
+         <div class="img-about col5">
              <img src="./assets/img/about.jpg" alt="About me">
          </div>
-         <div class="info-about col7">
-            <h4>My About Details</h4>
-            <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quis delectus voluptatibus facere sunt nemo pariatur hic praesentium, voluptates tenetur at minima maxime vel molestiae minus inventore quam tempore rem.</p>
-            <div>
-                <ul class="flex just-center">
-                    <li class="about-b">Main Skills</li>
-                    <li class="about-b">Awards</li>
-                    <li class="about-b">Experience</li>
-                    <li class="about-b">Education</li>
-                </ul> 
+            <div class="info-about col7">
+                <h4>My About Details</h4>
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quis delectus voluptatibus facere sunt nemo pariatur hic praesentium, voluptates tenetur at minima maxime vel molestiae minus inventore quam tempore rem.</p>
+                <div>
+                    <ul class="flex just-center">
+                        <li class="about-b">Main Skills</li>
+                        <li class="about-b">Awards</li>
+                        <li class="about-b">Experience</li>
+                        <li class="about-b">Education</li>
+                    </ul> 
+                </div>
             </div>
-            <div>
-                
-            </div>
-        </div>
      </div>
     </section>
     <section class="service">
@@ -168,10 +165,9 @@
             </div>
         </div>   
     </section>
-    <section class="contact">
-        <div class="container2 flex">
-            <div class="flex col12">
-                <div class="form flex column col6">
+    <section class="contact container2">
+            <div class="contact-content flex col12 ">
+                <div class="form flex column col6 mobile-100">
                     <p>Let's Say Hi</p>
                     <h3>Hire Me.</h3>
                     <p>Phone:    <span>+52 772 117 5072</span></p>
@@ -182,11 +178,10 @@
                     <input type="text" id="message" placeholder="  Your Message">
                     <button>SUBMIT NOW</button>
                 </div>
-                <div class="col6">
+                <div class="col6 mobile-100">
                    <img class="col12" src="./assets/img/contact.jpg" alt="Contact"> 
                 </div>
-            </div>
-        </div>   
+            </div>  
     </section>
 
     <footer>

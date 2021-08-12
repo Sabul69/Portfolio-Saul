@@ -10,6 +10,7 @@
 header{
     position: fixed;
     background-color: transparent;
+    z-index: 100;
 }
 
 
@@ -56,14 +57,16 @@ width: 30%;
 }
 
 @media (max-width:580px){
-    
+    .head ul{
+        width: 35%;
+    }
+
 }
 
 /* main section */
 
 .main {
     height: 90vh;
-    display: flex;
     align-items: center;
     position: relative;
 }
@@ -135,26 +138,32 @@ padding: 3%;
 }
 
 @media (max-width:580px){
-    
+    .main h2{
+        width: 95%;
+        font-size: 2.5rem;
+    }
+    .mobile-non{
+        display:  none;
+    }
 }
 
 
 /* about-section */
 
 .about{
-    padding: 7rem 4rem;
+    margin: 7rem 0;
 }
 .img-about img{
     border-radius: 10px;
+    width: 100%;
 }
 
 .info-about div ul{
     overflow: hidden;
-    width: 78.2%;
+    width: max-content;
     border-radius: 2rem;
     border: solid 1px #757575;
-    margin: 3rem 1rem;
-    padding: 0;
+    margin: 2rem 1rem;
 }
 
 .info-about p{
@@ -189,11 +198,25 @@ color: white;
 }
 
 @media (max-width:1200px){
+    .info-about div ul li{
+        font-size: 1rem;
+    }
     
 }
 
 @media (max-width:580px){
-    
+    .about-content{
+    flex-direction: column;
+    }
+    .img-about{
+    width: 100%;
+    }
+    .info-about{
+        width: 100%;
+    }
+    .info-about div ul li{
+        font-size: .8rem;
+    }
 }
 
 
@@ -230,7 +253,6 @@ background-color: #f6f6f6;
 border-radius: 1rem;
 padding: 2rem;
 height:16rem;
-
 }
 
 .serv:hover{
@@ -253,6 +275,19 @@ margin-bottom: 1rem;
  .serv h3{
     font-size: 1.3rem;
     margin-bottom: 1rem;
+}
+
+@media (max-width:1200px){
+
+}
+
+@media (max-width:580px){
+    .services{
+        flex-direction: column;
+    }
+    .serv{
+        width: 100%;
+    }
 }
 
 /* portfolio */
@@ -336,7 +371,12 @@ margin-bottom: 1rem;
 }
 
 @media (max-width:580px){
-    
+    .projects{
+        flex-direction: column;
+    }
+    .project{
+        width: 100%;
+    }
 }
 
 /* blog */
@@ -390,7 +430,12 @@ margin-bottom: 1rem;
 }
 
 @media (max-width:580px){
-    
+    .news{
+        flex-direction: column;
+    }
+    .new{
+        width: 100%;
+    }
 }
 
 
@@ -460,7 +505,15 @@ margin-bottom: 1rem;
 }
 
 @media (max-width:580px){
-    
+    .contact-content{
+        flex-direction: column;
+    }
+    .mobile-100{
+        width: 100%;
+    }
+    .form {
+        align-items: center;
+    }
 }
 
 /* footer */
