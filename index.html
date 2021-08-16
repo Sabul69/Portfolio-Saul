@@ -10,17 +10,17 @@
     <link rel="stylesheet"  href="./assets/css/styles.css"/>
 </head>
 <body>
- <header>
+ <header id="main-header">
     <nav class="container just-between head">
         
         <ul class="just-between col5 flex just-center align-center res">
             <button class="logo"><a href="#">S</a></button>
             <li class="mobile-non"><a href="">Home</a></li>
-            <li class="mobile-non"><a href="">About</a></li>
-            <li class="mobile-non"><a href="">Service</a></li>
-            <li class="mobile-non"><a href="">Portfolio</a></li>
-            <li class="mobile-non"><a href="">Blog</a></li>
-            <li class="mobile-non"><a href="">Contact</a></li>
+            <li class="mobile-non"><a href="#About">About</a></li>
+            <li class="mobile-non"><a href="#Service">Service</a></li>
+            <li class="mobile-non"><a href="#Portfolio">Portfolio</a></li>
+            <li class="mobile-non"><a href="#Blog">Blog</a></li>
+            <li class="mobile-non"><a href="#Contact">Contact</a></li>
         </ul>
         <ul class="just-between col2 flex just-center align-center">
             <li><a href=""><img src="./assets/img/facebook.svg" alt="Fb"></a></li>
@@ -40,8 +40,8 @@
         </div>
  </section>   
 
- <section class="about">
-     <div class="about-content container flex just-between">
+ <section class="about" id="About">
+     <div class="container flex just-between about-content">
          <div class="img-about col5">
              <img src="./assets/img/about.jpg" alt="About me">
          </div>
@@ -49,18 +49,32 @@
                 <h4>My About Details</h4>
                 <h2>About Me</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quis delectus voluptatibus facere sunt nemo pariatur hic praesentium, voluptates tenetur at minima maxime vel molestiae minus inventore quam tempore rem.</p>
-                <div>
+                <div class="flex column">
                     <ul class="flex just-center">
                         <li class="about-b">Main Skills</li>
                         <li class="about-b">Awards</li>
                         <li class="about-b">Experience</li>
                         <li class="about-b">Education</li>
-                    </ul> 
+                    </ul>
+                    <div class="about-content container">
+                        <h5> Skill 1</h5>
+                        <div class="bar rad">
+                            <div class="skill1 rad skill-h"></div>
+                        </div>
+                        <h5> Skill 2</h5>
+                        <div class="bar rad">
+                            <div class="skill3 rad skill-h"></div>
+                        </div>
+                        <h5> Skill 3</h5>
+                        <div class="bar rad">
+                            <div class="skill3 rad skill-h"></div>
+                        </div>
+                    </div> 
                 </div>
             </div>
      </div>
     </section>
-    <section class="service">
+    <section class="service" id="Service">
         <div class="container2 flex column">
             <div class="service-introduction">
                 <h4>What can i do for you</h4>
@@ -101,7 +115,7 @@
             </div>
         </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="Portfolio">
         <div class="container2 flex column align-center">
             <div class="portfolio-info">
                 <h4>My complete project</h4>
@@ -139,7 +153,7 @@
             <button class="project-button">View Projects</button>
         </div>
         </section>
-    <section class="blog">
+    <section class="blog" id="Blog">
         <div class="container2 flex column"> 
             <div class="blog-info">
 
@@ -165,7 +179,7 @@
             </div>
         </div>   
     </section>
-    <section class="contact container2">
+    <section class="contact container2" id="Contact">
             <div class="contact-content flex col12 ">
                 <div class="form flex column col6 mobile-100">
                     <p>Let's Say Hi</p>
@@ -202,6 +216,6 @@
             </div>
         </nav>
     </footer>
-
+<script src="./assets/js/scroll.js"></script>
 </body>
 </html>
