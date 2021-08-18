@@ -11,23 +11,28 @@
 </head>
 <body>
  <header id="main-header">
-    <nav class="container just-between head">
-        
-        <ul class="just-between col5 flex just-center align-center res">
+    <nav class="container flex just-between head align-center">
+        <div class="flex col5 align-center">
             <button class="logo"><a href="#">S</a></button>
-            <li class="mobile-non"><a href="">Home</a></li>
-            <li class="mobile-non"><a href="#About">About</a></li>
-            <li class="mobile-non"><a href="#Service">Service</a></li>
-            <li class="mobile-non"><a href="#Portfolio">Portfolio</a></li>
-            <li class="mobile-non"><a href="#Blog">Blog</a></li>
-            <li class="mobile-non"><a href="#Contact">Contact</a></li>
-        </ul>
-        <ul class="just-between col2 flex just-center align-center">
+        
+            <ul class="just-between col10 flex just-center align-center res transition" id="main-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Service">Service</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#Blog">Blog</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+        <ul class="just-between col2 flex just-center align-center mobile-non">
             <li><a href=""><img src="./assets/img/facebook.svg" alt="Fb"></a></li>
             <li><a href=""><img src="./assets/img/linkedin.svg" alt="In"></a></li>
             <li><a href=""><img src="./assets/img/instagram.svg" alt="Insta"></a></li>
             <li><a href=""><img src="/assets/img/twitter.svg" alt="TW"></a></li>
         </ul>
+        <div class="responsive-header col3" id="responsive-menu">
+            <p>Menu</p>
+         </div>
     </nav>
     
  </header>
@@ -217,5 +222,6 @@
         </nav>
     </footer>
 <script src="./assets/js/scroll.js"></script>
+<script src="./assets/js/menu.js"></script>
 </body>
 </html>

@@ -19,6 +19,9 @@
 .just-end{
 justify-content: flex-end;
 }
+:root{
+    --c1:#FD4766;
+}
 
 .align-center{
     align-items: center;
